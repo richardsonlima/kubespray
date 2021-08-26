@@ -33,7 +33,7 @@ calico_advertise_service_external_ips: []
 calico_advertise_service_loadbalancer_ips: []
 
 # Calico eBPF support
-calico_bpf_enabled: false
+calico_bpf_enabled: true
 calico_bpf_log_level: ""
 # Valid option for service mode: Tunnel (default), DSR=Direct Server Return
 calico_bpf_service_mode: Tunnel
