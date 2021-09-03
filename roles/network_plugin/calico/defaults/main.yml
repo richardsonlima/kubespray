@@ -61,7 +61,7 @@ calico_felix_prometheusgometricsenabled: true
 calico_felix_prometheusprocessmetricsenabled: true
 
 # Set the agent log level. Can be debug, warning, info or fatal
-calico_loglevel: info
+calico_loglevel: debug
 calico_node_startup_loglevel: error
 
 # Enable or disable usage report to 'usage.projectcalico.org'
