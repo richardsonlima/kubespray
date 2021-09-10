@@ -65,7 +65,7 @@ def get_var_as_bool(name, default):
 CONFIG_FILE = os.environ.get("CONFIG_FILE", "./inventory/sample/hosts.yaml")
 # Remove the reference of KUBE_MASTERS after some deprecation cycles.
 KUBE_CONTROL_HOSTS = int(os.environ.get("KUBE_CONTROL_HOSTS",
-                         os.environ.get("KUBE_MASTERS", 2)))
+                         os.environ.get("KUBE_MASTERS", 1)))
 # Reconfigures cluster distribution at scale
 SCALE_THRESHOLD = int(os.environ.get("SCALE_THRESHOLD", 50))
 MASSIVE_SCALE_THRESHOLD = int(os.environ.get("MASSIVE_SCALE_THRESHOLD", 200))
