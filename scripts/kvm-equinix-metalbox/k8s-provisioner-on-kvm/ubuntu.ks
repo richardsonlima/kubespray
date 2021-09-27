@@ -12,7 +12,7 @@ timezone --utc Etc/UTC
 rootpw --disabled
 # Initial user
 #Welcome01 is the encrypted password. use encrypt-pw.py to generate a new one
-user ansible --fullname "ansible" --iscrypted --password $6$a9frdD70CCrUUzs7$p0BTLpn4BZkfqS3Kk4bBFZyCRiLbPGYOjRf2WE./2GEC64tNrDVhxhX086jIbL8ZStqk6.ymL4xyo7gpVL2Cl/
+user ansible --fullname "ansible" --iscrypted --password $6$J.QH3tHHwUf/ESXw$jS3ll.1pp79oe1cun4IjBOjjrgQrT6tqiQbMfvcOtaIdEXkeFTYXdwBpmZUaggIZCFPG83.gGiCgabYbRQ1HS1
 # Reboot after installation
 reboot
 # Use text mode install
