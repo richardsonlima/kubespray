@@ -52,7 +52,7 @@ echo ### Add public ssh key for Ansible
 mkdir -m0700 -p /home/ansible/.ssh
 #use the folowing to generate a new public and private keypair: ssh-keygen -C 'ansible@host' -f id_rsa -N ''
 cat <<EOF >/home/ansible/.ssh/authorized_keys
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsb48BefT3ePWsO3CFHS3AGvBz1ONJDJ0VZ/0OPmiwoiNsf3XS8ugNaN3sXmr/ls3fcVA2nLHf6pQiAqm4ZnNpX4Lc3WGDqjDRK/bs3Xp5RrizYbCXYfzirYYP1qFOlTa3c6lzyFEjLzdk/ZYr31kEeteqaD5lTH9XxXMQ25DtCAIkEtD3h0lbMVQaY4bPKKe/cF0JTQmWvYYQu3n2YuQ+s5rJt2PHvQuLP6F3WGJW2mbLcgNtP0e8TRiYPJWgVnQvaUxQ0RmRjGp75PG6esCdnAdpfEp6FuFBK30jH1FVAuWsTFZ4EkGSt496o96QGO5F01NOD/smXA2Ras/4VZnZQ+jAT9Vt82s53OkircOTRTUKvvx1r3V9CmXk+wvO4Me50PeUAIIe5lAWha2k7xwRgjE5MUqK+/3FKmNFtcicokbcRo/70SrIW3NhKt/vIOWqdQrwQK292ppMhjyPnf4//CWzeOMT4ERfiLqc0Yv6PzjbJseb0dDFmA4M9ThbKTk= ansible@host
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDQtej/Gme9hL7IytqEL5LozpJBjn3KM+Il/ch+drgEYcVuxYtilIRJDCpXU3V8HF/mRrYfTilJLvpMPmoducdo+AM0pNcdDEE2S5YejL7V1fLR2sH29Rw6b2TKfMswhyHaOO5/SeX6cJVBXam+EHyDGNsIDfFUk6ZWKyN7AjmsnJLVek6vFlz3vp4QCB59K6VDoeFGid2DZlN+vdCbC4vv83P5czcBBOJkI1wkMwE7yo4I1t5/luRRHRWyYCeIDR2b14q6ZMK4y4/TFWKUgC2W/eBeh8T8WPyXDBoVCytiX2CYlQBOlQd4HYgDatAkzMlE+Vc86hpVmamX9igFBPoZltebqADyMdO0HxkR82zSW+cP7IF8XQbg+ok+udSu63A/e2BEXyO3hvw8UGCxm8W33004JtwW2mpRE4cwzm4e+9NHSspN94v4Y6Hs5sVgdUn9X6FMRjueomhkdywiJC9dYsN5IZOGYCDlfDIeAGjW66u08+cI3nMYGnEjtuMyKck= ansible@host
 EOF
 echo ### Set permissions for Ansible directory and key. Since the "Initial user"
 echo ### is added *after* %post commands are executed, I use the UID:GID
