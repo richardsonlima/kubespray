@@ -29,7 +29,7 @@ MAC="RANDOM"
 VERBOSE=
 DEBUG=
 #VM_IMAGE_DIR=/var/lib/libvirt
-VM_IMAGE_DIR=/home/maarten/k8s/k8s-prov/machines
+VM_IMAGE_DIR=/home/craig/k8s/k8s-prov/machines
 
 usage()
 {
