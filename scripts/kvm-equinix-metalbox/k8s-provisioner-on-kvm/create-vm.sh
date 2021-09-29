@@ -21,9 +21,9 @@ HOSTNAME=
 #e.g. for Ubuntu 20.04 'http://archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/'
 ISO_FQN=
 KS_FQN=
-RAM=1024
-VCPUS=2
-STORAGE=20
+RAM=512
+VCPUS=1
+STORAGE=15
 BRIDGE=virbr0
 MAC="RANDOM"
 VERBOSE=
