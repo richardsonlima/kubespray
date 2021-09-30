@@ -17,7 +17,7 @@
 #   limitations under the License.
 
 VM=$1
-VM_IMAGE_DIR=/home/maarten/k8s/k8s-prov/machines
+VM_IMAGE_DIR=/home/craig/k8s/k8s-prov/machines
 IMAGE="${VM_IMAGE_DIR}/images/$VM.img"
 
 usage()
