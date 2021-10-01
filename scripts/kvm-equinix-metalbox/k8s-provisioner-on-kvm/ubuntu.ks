@@ -71,4 +71,3 @@ chmod 0600 /home/ansible/.ssh/authorized_keys
 echo "ansible ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/ansible
 echo ### Change back to terminal 1
 chvt 1
-
