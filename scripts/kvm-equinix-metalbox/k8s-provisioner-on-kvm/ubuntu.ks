@@ -33,7 +33,12 @@ part swap --size 200
 # System authorization infomation
 auth  --useshadow  --enablemd5 
 # Firewall configuration
-firewall --enabled --ssh 
+firewall --enabled --port=22:tcp
+firewall --enabled --ssh
+ufw default allow incoming
+ufw default allow outgoing
+ufw allow 22/tcp
+ufw allow ssh
 # Do not configure the X Window System
 skipx
 %post --interpreter=/bin/bash
@@ -48,6 +53,9 @@ apt-get install -y openssh-server vim python
 echo ### Enable serial console so virsh can connect to the console
 systemctl enable serial-getty@ttyS0.service
 systemctl start serial-getty@ttyS0.service
+echo ### Enable ssh service
+systemctl start ssh.service
+systemctl enable ssh.service
 echo ### Add public ssh key for Ansible
 mkdir -m0700 -p /home/ansible/.ssh
 #use the folowing to generate a new public and private keypair: ssh-keygen -C 'ansible@host' -f id_rsa -N ''
